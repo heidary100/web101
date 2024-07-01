@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Courier, 'Courier New';
+}
+body{
+	background: rgb(66,95,74);
+	background-size: 300px;
+}
+
+.main{
+	width: 99vw;
+	height: 98vh;
+	overflow: scroll;
+	margin: 1vh 0.5vw;
+	box-sizing:border-box;
+	padding: 10px;
+}
+
+.main.light{
+	background: rgba(238, 238, 238, 0.95);
+	border: 3px solid #222831;
+}
+
+.main.light *{
+	color: #222831;
+}
+
+.main.dark{
+	background: rgba(34, 40, 49, 0.95);
+	border: 3px solid #EEEEEE;
+}
+.main.dark *{
+	color: #EEEEEE;
+}
+
+.main.dark .theme-changer{
+	color: #EEEEEE;
+}
+.main.light .theme-changer{
+	color: #222831;
+}
+
+.theme-changer{
+	background: transparent;
+	text-decoration: underline;
+	font-weight: bolder;
+	border: none;
+	cursor: pointer;
+	position: fixed;
+	right: 1.1vw;
+	bottom: 1.1vh;
+	padding: 10px;
+}
+
+.main.light .header{
+	border-bottom: 3px solid #222831;
+}
+
+.main.dark .header{
+	border-bottom: 3px solid #EEEEEE;
+}
+
+.header{
+	width: 100%;
+	height: 80px;
+	margin-bottom: 15px;
+}
+
+.logo{
+	float: left;
+	height: 80px;
+}
+
+.logo h1{
+	height: 80px;
+	line-height: 80px;
+}
+
+.left{
+	width:30%;
+	float: left;
+}
+
+.right{
+	width:65%;
+	height: 500px;
+	padding: 10px;
+	float: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul ul li{
+    border-left: 4px solid  rgb(66,95,74);
+}
+
+li {
+    padding: 10px;
+    /* background: #ecf0f1; */
+    margin-bottom: 5px;
+    transition: background 0.3s;
+}
+
+/* li:hover {
+    background: #bdc3c7;
+} */
+
+/* Code elements */
+code {
+	margin: 3px;
+	text-decoration: underline;
+}
+
+.intro {
+	width: 100%;
+	padding: 20px;
+	box-sizing:border-box;
+	/* background: #fff; */
+	/* border-radius: 8px; */
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.intro h1 {
+	color: #2c3e50;
+}
+
+.intro p {
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+.intro ul {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+.intro ul li {
+	margin-bottom: 10px;
+}
+
+.intro ul li strong {
+	color: #3498db;
+}
